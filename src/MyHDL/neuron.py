@@ -1,3 +1,19 @@
+'''
+Copyright (C) 2022 - Delft University of Technology
+ SPDX-License-Identifier: Apache-2.0 WITH SHL-2.1
+
+ Licensed under the Solderpad Hardware License v 2.1 (the “License”); you may not use this file except in compliance
+ with the License, or, at your option, the Apache License version 2.0. You may obtain a copy of the License at
+ https://solderpad.org/licenses/SHL-2.1/
+
+ Unless required by applicable law or agreed to in writing, any work distributed under the License is distributed on
+ an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
+ specific language governing permissions and limitations under the License.
+
+ Reconfigurable neuron in MyHDL
+ Author: Jinhuang Lin
+ This is the reconfigurable neuron written in MyHDL. To configure the width of threshold and synaptic weight, specify these widths in the conversion function.
+'''
 from myhdl import block, Signal, intbv, always_comb, always_seq, instances, ResetSignal
 
 
@@ -40,7 +56,7 @@ def neuron(spike_in, firing_threshold, syn_weight, clock, reset, spike_out, fir_
                 membrane_potential_next.next = membrane_potential_ovfl_next
         return instances()
 
-
+'''Conversion function: this function will directly generate a Verilog file.'''
 def convert_inc(hdl, fir_res_arg=16, syn_res_arg=8):
     _fir_res_ = fir_res_arg
     _syn_res_ = syn_res_arg

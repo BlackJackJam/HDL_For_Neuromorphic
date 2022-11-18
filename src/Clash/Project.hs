@@ -1,3 +1,20 @@
+-- Copyright (C) 2022 - Delft University of Technology
+-- SPDX-License-Identifier: Apache-2.0 WITH SHL-2.1
+--
+-- Licensed under the Solderpad Hardware License v 2.1 (the “License”); you may not use this file except in compliance
+-- with the License, or, at your option, the Apache License version 2.0. You may obtain a copy of the License at
+-- https://solderpad.org/licenses/SHL-2.1/
+--
+-- Unless required by applicable law or agreed to in writing, any work distributed under the License is distributed on
+-- an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
+-- specific language governing permissions and limitations under the License.
+--
+
+-- Reconfigurable neuron in Clash
+-- Author: Jinhuang Lin
+-- 
+-- This is the reconfigurable neuron written in Clash. To configure the width of threshold and the width of synaptic weight, change the corresponding numbers in the topEntity (e.g. the width of threshold is 6 and the width of synaptic weight is 4).
+
 module Project where
 
 import Clash.Prelude
