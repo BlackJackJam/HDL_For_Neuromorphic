@@ -8,4 +8,4 @@ A reconfigurable integrate-and-fire neuron written in Verilog, [Chisel](https://
 
 > Copyright (C) 2022 - Delft University of Technology
 
-> The HDL source code of ReckOn is under a Solderpad Hardware License v2.1 (see LICENSE file or https://solderpad.org/licenses/SHL-2.1/).
+> The HDL source code is under a Solderpad Hardware License v2.1 (see LICENSE file or https://solderpad.org/licenses/SHL-2.1/).
